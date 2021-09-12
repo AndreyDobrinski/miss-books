@@ -1,0 +1,41 @@
+.app-home {
+  background-image: url("https://s1.1zoom.me/b2435/30/Library_Book_Lamp_569455_1920x1080.jpg");
+  height: 100vh;
+  padding-top: 277px;  
+  @include for-narrow-layout {
+    padding-top: 350px;
+  }
+  
+  @include for-normal-layout {
+    padding-top: 350px;
+  }
+  
+  h1 {
+    -webkit-text-stroke: 0.1px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  a{
+      .btn-start {
+        background-color: #80808075;
+        color: white;
+        border: 1px solid white;
+        font-size: 30px;
+        border-radius: 50px;
+        padding: 10px;
+        width: 200px;
+        transition: 0.4s;
+        &:hover {
+          transition: 0.4s;
+          background-color: rgb(122, 122, 122);
+        }
+      }
+
+  }
+  
+}

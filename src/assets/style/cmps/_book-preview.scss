@@ -1,0 +1,75 @@
+.book-preview {
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgb(173, 173, 173);
+  padding: 10px;
+  margin: 15px;
+  width: 300px;
+  // height: 320px;
+  height: 41vh;
+
+  border-radius: 10px;
+  transition: 0.4s;
+
+  @include for-narrow-layout {
+    width: 236px;
+  }
+
+  @include for-normal-layout {
+    width: 236px;
+  }
+  &:hover {
+    box-shadow: 0px 0px 5px 1px #a5a0a0;
+  }
+  .book-preview-text {
+    margin-bottom: 10px;
+
+    p {
+      font-size: 20px;
+    }
+  }
+  .book-preview-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    > div {
+      background-color: #34df6dd4;
+      width: 150px;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      label {
+        color: white;
+      }
+    }
+
+    img {
+      width: 150px;
+      height: 200px;
+    }
+  }
+  button {
+    padding: 3px 10px;
+    border: 1px solid #bbbbbb;
+    &:hover {
+      color: white;
+      transition: 0.4s;
+      // background-color: rgb(160, 160, 160);
+      border: 1px solid rgb(160, 160, 160);
+    }
+  }
+  .btn-details {
+    &:hover {
+      background-color: rgb(46, 179, 46);
+    }
+  }
+  .btn-remove {
+    &:hover {
+      background-color: rgb(233, 43, 43);
+    }
+  }
+}

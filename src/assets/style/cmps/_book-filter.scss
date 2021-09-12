@@ -1,0 +1,59 @@
+.book-filter {
+  margin-top: 40px;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+
+  .book-filter-filters {
+    // margin-bottom: 30px;
+    flex-direction: column;
+    .book-filter-by-name{
+      margin-bottom: 34px;
+    }
+    .book-filter-by-price{
+      margin-bottom: 20px;
+      .book-filter-by-price-imput{
+        width: 245px;
+
+      }
+    }
+    @include for-narrow-layout {
+      flex-direction: row;
+    }
+    
+    @include for-normal-layout {
+      flex-direction: row;
+
+
+    }
+  }
+}
+.book-filter-new-books {
+  list-style: none;
+  padding: 0;
+  li{
+    display: flex;
+    padding: 10px;
+    // margin-left: 70px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    img{
+      margin-right: 20px;
+      border-radius: 50%;
+
+      &:hover {
+        cursor: pointer;
+
+    }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+
+.app-header {
+    z-index: 1;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    height: 10vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    .app-header-logo{
+        p{
+            font-size: 35px;
+        }
+    }
+    nav{
+        a{
+            font-size: 20px;
+            margin-left: 20px;
+        }
+    }
+}

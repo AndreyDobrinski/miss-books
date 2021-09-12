@@ -1,0 +1,72 @@
+.review-add {
+  h1 {
+    margin: 0px;
+    margin-bottom: 12px;
+    
+  }
+  form {
+    margin-bottom: 10px;
+    textarea {
+      margin: 0px;
+      resize: none;
+      margin-bottom: 10px;
+    }
+    .btn-save {
+      button {
+        // padding: 10px;
+        padding: 7px 17px 7px 17px;
+        &:hover {
+          transition: 0.4s;
+          background-color: rgb(122, 122, 122);
+          color: white;
+          border: 1px solid rgb(160, 160, 160);
+        }
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .review-add-rates {
+    width: 180px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .review-add-rates-btn{
+      cursor: pointer;
+    }
+
+    .btn-reduce {
+      margin: 0;
+    }
+  }
+
+  .review-add-reviews {
+    li {
+      border-bottom: 1px solid gray;
+      margin-bottom: 15px;
+      p {
+        margin: 0;
+        color: #1f1f1f;
+      }
+      .list-btn-delete {
+        margin-bottom: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        
+      }
+      .list-date {
+        width: 150px;
+      }
+      .list-text {
+        width: 150px;
+      }
+      .list-stars {
+        width: 150px;
+      }
+    }
+  }
+}
